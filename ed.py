@@ -280,11 +280,13 @@ class FunctionWindow(QMainWindow):
             yplot = y
 
         # 2D
+        # TODO:  Decide on different function plot format.
 
         elif self.comboBox.currentText() == "y = sin(x) 2D":
             y = abs(np.sin(a*self.xcoords)) 
             yplot = y
             y = (abs(np.sin(a*self.xycoords[:, :, 0]))+abs(np.sin(a*self.xycoords[:, :, 1])))/2.0
+
 
         # Update npImgCont by broadcasting fcn output (y) over all of the rows of npImgCont (which should be 1s)
         np.multiply(self.npImgCont, y, out=self.npImgCont)
