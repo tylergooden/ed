@@ -8,3 +8,12 @@ matplotlib
 opencv-python
 noise
 
+With virtual environment on Rocky machines:
+Install with pip:
+(1) matplotlib
+(2) pyside6
+(3) opencv-python
+(4) noise
+
+
+
